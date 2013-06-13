@@ -93,11 +93,9 @@ img {
 @media only screen and (max-width: 1023px) {
 
 	body {
-	font-size: 0.8em;
-	line-height: 1.5em;
 	}
 	
-	}
+}
 
 
 /* Mobile */
@@ -105,8 +103,6 @@ img {
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
-	font-size: 16px;
-	-webkit-text-size-adjust: none;
 	}
 	
 	.row, body, .container {
