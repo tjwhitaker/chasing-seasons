@@ -6,3 +6,5 @@ TODO
 - Style
 - Remove Likes
 - Social Sharing
+- Implement Error Notifications
+
