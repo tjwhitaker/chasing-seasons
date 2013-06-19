@@ -7,6 +7,7 @@ TODO
 - Remove Likes
 - Social Sharing
 - Implement Error Notifications
+- Format Posts
 
 Chasing Seasons
 ===============
