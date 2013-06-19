@@ -8,8 +8,10 @@ TODO
 - Social Sharing
 - Implement Error Notifications
 - Format Posts
-- fix undefined when comment count is 0
 - fix null on comments
+
+~~fix undefined when comment count is 0~~
+
 
 Chasing Seasons
 ===============
