@@ -1,12 +1,16 @@
 <template name="postItem">
     <div class="post">
+        <img src="{{image}}" />
         <h3><a href="{{postPagePath this}}">{{title}}</a></h3>
         <p>
             {{description}}
-            <a href="{{postPagePath this}}">{{pluralize commentsCount "comment"}}</a>
             {{#if ownPost}}<a href="{{postEditPath this}}">Edit</a>{{/if}}
         </p>
-        <a class="price" href="{{url}}">${{price}}</a>
-        <a href="{{postPagePath this}}">Discuss</a>
+        <div class="controls">
+            <a class="price" href="{{url}}">${{price}}</a>
+            <a href="#" class="right">Share</a>
+            <a href="#" class="right">Save</a>
+            <a href="{{postPagePath this}}" class="right">{{pluralize commentsCount "comment"}}</a>            
+        </div>
     </div>
 </template>

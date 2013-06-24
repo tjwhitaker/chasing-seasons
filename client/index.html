@@ -2,9 +2,26 @@
     <title>Chasing Seasons</title>
 </head>
 <body>
-    {{> header}}
-    {{> nav}}
-    {{> errors}}
-    {{> main}}
-    {{> footer}}
+    {{loginButtons}}
+    <div class="container">
+        <div class="row header">
+            {{> header}}
+        </div>
+        
+        <div class="row nav">
+            {{> nav}}
+        </div>
+        
+        <div class="row errors">
+            {{> errors}}
+        </div>
+        
+        <div class="row main">
+            {{> main}}
+        </div>
+        
+        <div class="row footer">
+            {{> footer}}
+        </div>
+    </div>
 </body>

@@ -9,9 +9,15 @@ TODO
 - Implement Error Notifications
 - Format Posts
 - fix null on comments
+- Add Categories
+- Default categories for navigation
+- Select Ordering of categories for navigation
+- Choose fonts
+- share functionality
+- save functionality
 
 ~~fix undefined when comment count is 0~~
-
+~~temp logo~~
 
 Chasing Seasons
 ===============

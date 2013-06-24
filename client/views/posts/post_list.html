@@ -1,19 +1,20 @@
 <template name="postList">
-    <div class="row">
-        <div class="posts twelvecol">
-            {{#each posts}}
-                {{> postItem}}
-            {{/each}}
+    <div class="posts eightcol">
+        {{#each posts}}
+            {{> postItem}}
+        {{/each}}
 
-            {{#if postsReady}}
-                {{#unless allPostsLoaded}}
-                    <a class="load-more" href="#">Load More</a>
-                {{/unless}}
-            {{else}}
-                {{> loading}}
-            {{/if}}
+        {{#if postsReady}}
+            {{#unless allPostsLoaded}}
+                <a class="load-more" href="#">Load More</a>
+            {{/unless}}
+        {{else}}
+            {{> loading}}
+        {{/if}}
 
-            <a href="{{postSubmitPath this}}">New</a>
-        </div>
+        <a href="{{postSubmitPath this}}">New</a>
+    </div>
+    <div class="ads fourcol last">
+        {{> ads}}
     </div>
 </template>

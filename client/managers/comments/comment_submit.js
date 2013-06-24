@@ -4,7 +4,7 @@ Template.commentSubmit.events({
         var $body = $(e.target).find('[name=body]');
         var comment = {
             body: $body.val(),
-            postId: template.data._id
+            postId: template.data._id,
         };
 
         Meteor.call('comment', comment, function(error, commentId) {

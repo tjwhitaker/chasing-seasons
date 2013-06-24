@@ -1,0 +1,93 @@
+.adtest {
+    height:600px;
+    width:300px;
+    background:#ddd;
+}
+html, body {
+    .backgroundImage('light_bg.png');
+    .droid();
+}
+h1, h2, h3, h4, h5, h6 {
+    .oswald();
+}
+.container {
+    .border(5px, solid, #cccccc);
+    .backgroundColor(white);
+    width: 100%;
+    max-width: 1140px;
+    min-width: 755px;
+    margin:0 auto;
+    .header {
+    }
+    .nav {
+        border-top:5px solid #ccc;
+        margin-top:-6px;
+        .backgroundColor(#ccc);
+        .categories {
+            li {
+                display:inline;
+                a {
+                    .oswald();
+                    color:black;
+                    text-decoration:none;
+                    padding:0 15px 0 10px;
+                }
+                .active {
+                    .backgroundColor(white);
+                }
+            }
+        }
+    }
+    .errors {
+    }
+    .main {
+        .posts {
+            .post {
+                padding:15px;
+                h3 {
+                    a {
+                        color:black;
+                        text-decoration:none;
+                    }
+                }
+                .controls {
+                    padding:5px;
+                    border-top:3px solid #ccc;
+                    border-bottom:3px solid #ccc;
+                }
+            }
+        }
+    }
+    .footer {
+    }
+}
+.border(@size:1px, @style:solid, @color:black) {
+    border:@size @style @color;
+}
+.backgroundColor(@color:white) {
+    background-color: @color;
+}
+.backgroundImage(@img) {
+    background-image: url('/@{img}');
+}
+.oswald(@weight:normal, @size:30px, @lineHeight:40px) {
+    font-family:oswald;
+    font-weight:@weight;
+    font-size:@size;
+    line-height:@lineHeight;
+    src:url('/oswald.ttf');
+}
+.roboto(@weight:normal, @size:16px, @lineHeight:20px) {
+    font-family:roboto;
+    font-weight:@weight;
+    font-size:@size;
+    line-height:@lineHeight;
+    src:url('/roboto.ttf');
+}
+.droid(@weight:normal, @size:20px, @lineHeight:24px) {
+    font-family:droid;
+    font-weight:@weight;
+    font-size:@size;
+    line-height:@lineHeight;
+    src:url('/droid.ttf');
+}

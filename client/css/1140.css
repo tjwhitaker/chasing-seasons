@@ -7,11 +7,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
 /* ==================================================================================================================== */
 
-.container {
-padding-left: 20px;
-padding-right: 20px;
-}
-
 .row {
 width: 100%;
 max-width: 1140px;
@@ -92,9 +87,6 @@ img {
 
 @media only screen and (max-width: 1023px) {
 
-	body {
-	}
-	
 }
 
 
@@ -106,21 +98,9 @@ img {
 	}
 	
 	.row, body, .container {
-	width: 100%;
-	min-width: 0;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
 	}
 	
 	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
-	width: auto;
-	float: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
 	}
 
 }
