@@ -1,3 +1,8 @@
+@blue:#55a1ee;
+@orange:#ff6600;
+@green:#a1ee54;
+@pink:#ee54a1;
+
 .adtest {
     height:600px;
     width:300px;
@@ -9,6 +14,10 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6 {
     .oswald();
+}
+a {
+    color:@orange;
+    text-decoration:none;
 }
 .container {
     .border(5px, solid, #cccccc);
@@ -32,8 +41,13 @@ h1, h2, h3, h4, h5, h6 {
                     text-decoration:none;
                     padding:0 15px 0 10px;
                 }
+                a:hover {
+                    color:@blue;
+                    .backgroundColor(white);
+                }
                 .active {
                     .backgroundColor(white);
+                    color:@blue;
                 }
             }
         }

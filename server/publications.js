@@ -1,3 +1,9 @@
+
+
+Meteor.publish('currentUser'), function() {
+    return Meteor.users.find(this.userId); 
+};
+
 Meteor.publish('posts', function(limit) {
     return Posts.find({}, {sort: {submitted: -1}, limit: limit});
 });
