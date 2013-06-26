@@ -33,5 +33,14 @@ if (Categories.find().count() === 0) {
     Categories.insert({
         title: 'Snow'
     });
+}
 
+if (Meteor.users.find().count() === 0) {
+    Accounts.createUser({
+        username: 'tim',
+        email: 'tmwhtkr@gmail.com',
+        password: 'pass',
+        profile: {},
+        isAdmin: true
+    });
 }

@@ -8,7 +8,8 @@ Meteor.Router.add({
         to: 'postEdit',
         and: function(id) { Session.set('currentPostId', id); }
     },
-    '/submit': 'postSubmit'
+    '/submit': 'postSubmit',
+    '/profile': 'profile',
 });
 
 Meteor.Router.filters({

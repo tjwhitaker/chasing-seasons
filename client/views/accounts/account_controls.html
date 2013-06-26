@@ -1,0 +1,11 @@
+<template name="accountControls">
+    <ul class="account-controls fourcol last">
+        {{#if currentUser}}
+        <li><a href="{{profilePath this}}">My Account</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+            {{else}}
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>
+        {{/if}}
+    </ul>
+</template>

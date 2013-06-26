@@ -1,12 +1,12 @@
 @blue:#55a1ee;
 @orange:#ff6600;
-@green:#a1ee54;
-@pink:#ee54a1;
+@lightGrey:#cccccc;
+@darkGrey:#999999;
 
 .adtest {
     height:600px;
     width:300px;
-    background:#ddd;
+    background:@lightGrey;
 }
 html, body {
     .backgroundImage('light_bg.png');
@@ -20,7 +20,7 @@ a {
     text-decoration:none;
 }
 .container {
-    .border(5px, solid, #cccccc);
+    .border(5px, solid, @lightGrey);
     .backgroundColor(white);
     width: 100%;
     max-width: 1140px;
@@ -29,10 +29,45 @@ a {
     .header {
     }
     .nav {
-        border-top:5px solid #ccc;
+        border-top:5px solid @lightGrey;
         margin-top:-6px;
-        .backgroundColor(#ccc);
+        .backgroundColor(@lightGrey);
         .categories {
+            li {
+                display:inline;
+                a {
+                    .oswald();
+                    color:black;
+                    text-decoration:none;
+                    padding:0 15px 0 10px;
+                }
+                a:hover {
+                    color:@blue;
+                    .backgroundColor(white);
+                }
+                .active {
+                    .backgroundColor(white);
+                    color:@blue;
+                }
+            }
+        }
+        .account-controls {
+            float:right;
+            text-align:right;
+            li {
+                display:inline;
+                a {
+                    .oswald(normal, 20px, 40px);
+                    color:@darkGrey;
+                    text-decoration:none;
+                    padding:0 5px 0 5px;
+                }
+                a:hover {
+                    color:@blue;
+                }
+            }
+        }
+        .account-nav {
             li {
                 display:inline;
                 a {
@@ -66,8 +101,8 @@ a {
                 }
                 .controls {
                     padding:5px;
-                    border-top:3px solid #ccc;
-                    border-bottom:3px solid #ccc;
+                    border-top:3px solid @lightGrey;
+                    border-bottom:3px solid @lightGrey;
                 }
             }
         }

@@ -1,8 +1,19 @@
-
-
-Meteor.publish('currentUser'), function() {
+Meteor.publish('currentUser', function() {
     return Meteor.users.find(this.userId); 
-};
+});
+
+Meteor.publish('allUsers', function() {
+    //if admin, publish all fields
+    if (this.userId && isAdmin(this.userId)) {
+        return Meteor.users.find();
+    }
+    //else hide sensitive info
+    else {
+        return Meteor.users.find({}, {fields: {
+            isAdmin: false
+        }});
+    }
+});
 
 Meteor.publish('posts', function(limit) {
     return Posts.find({}, {sort: {submitted: -1}, limit: limit});

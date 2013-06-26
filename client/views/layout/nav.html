@@ -1,3 +1,8 @@
 <template name="nav">
-    {{> categoryList}}
+    {{#if currentPageIsProfile}}
+        {{> accountNav}}
+    {{else}}
+        {{> categoryList}}
+    {{/if}}
+    {{> accountControls}}
 </template>
