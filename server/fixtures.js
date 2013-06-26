@@ -3,10 +3,10 @@ if (Posts.find().count() === 0) {
         Posts.insert({
             title: 'Test Post #' + i,
             url: 'http://www.tim-whitaker.com',
-            description: "Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut libero tortor, consequat vel felis sed, iaculis tincidunt sem. Phasellus hendrerit elementum luctus. Mauris fringilla pharetra fringilla. Nam lacus risus, tempor eu aliquet sed, mattis et metus. Aliquam non est aliquet nisi sollicitudin fringilla. Sed condimentum ornare massa sit amet dictum. Morbi volutpat mi sed justo eleifend, pretium placerat dui accumsan. Nullam tristique nisi eu turpis iaculis commodo. Phasellus eget ante id enim iaculis luctus quis eget tellus. Nunc faucibus pellentesque accumsan. Proin magna nulla, congue a nulla nec, sagittis facilisis orci. Curabitur eget consectetur dui.",
             price: Math.round(Random.fraction()*100),
             commentsCount: 0,
-            image: '/placeholder.jpg',
+            image: '/fixtureImages/' + i%10 + '.jpg',
         });
     }
 }

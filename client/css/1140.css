@@ -76,6 +76,7 @@ margin-right: 0px;
 
 img, object, embed {
 max-width: 100%;
+width:100%;
 }
 
 img {
