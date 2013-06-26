@@ -3,16 +3,16 @@ TODO
 
 - Post Submit
 - Admin post Priveleges
-- Style
-- Remove Likes
+~~Style~~
+~~Remove Likes~~
 - Social Sharing
 - Implement Error Notifications
-- Format Posts
+~~Format Posts~~
 - fix null on comments
-- Add Categories
-- Default categories for navigation
-- Select Ordering of categories for navigation
-- Choose fonts
+~~Add Categories~~
+~~Default categories for navigation~~
+~~Select Ordering of categories for navigation~~
+~~Choose fonts~~
 - share functionality
 - save functionality
 
