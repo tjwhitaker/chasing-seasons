@@ -1,7 +1,3 @@
-Meteor.publish('currentUser', function() {
-    return Meteor.users.find(this.userId); 
-});
-
 Meteor.publish('allUsers', function() {
     //if admin, publish all fields
     if (this.userId && isAdmin(this.userId)) {
