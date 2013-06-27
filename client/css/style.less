@@ -90,6 +90,24 @@ a {
     .errors {
     }
     .main {
+        position:relative;
+        .account-modal {
+            display:none;
+            position:absolute;
+            right:0;
+            top:0;
+            background-color:@lightGrey;
+            padding:5px;
+            input {
+                display:block;
+            }
+            .login {
+                display:none;
+            }
+            .register {
+                display:none;
+            }
+        }
         .posts {
             .post {
                 padding:15px;
