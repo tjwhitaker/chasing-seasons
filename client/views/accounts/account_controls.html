@@ -1,7 +1,7 @@
 <template name="accountControls">
     <ul class="account-controls fourcol last">
         {{#if currentUser}}
-            <li><a href="{{profilePath this}}">My Account</a></li>
+        <li><a href="{{profilePath this}}">{{displayName}}</a></li>
             <li><a href="#" class="logout-link">Logout</a></li>
             {{else}}
             <li><a href="#" class="register-link">Register</a></li>
