@@ -10,7 +10,7 @@ Meteor.startup(function() {
             return canRemoveUser(userId, doc);
         }
     });
-    Meteor.posts.allow({
+    Posts.allow({
         insert: function(userId, doc) {
             return canPost(userId, doc);
         },
@@ -21,7 +21,7 @@ Meteor.startup(function() {
             return canRemovePost(userId, doc);
         }
     });
-    Meteor.comments.allow({
+    Comments.allow({
         insert: function(userId, doc) {
             return canComment(userId, doc);
         },
@@ -32,7 +32,7 @@ Meteor.startup(function() {
             return canRemoveComment(UserId, doc);
         }
     });
-    Meteor.categories.allow({
+    Categories.allow({
         insert: function(userId, doc) {
             return false;
         },
@@ -46,7 +46,7 @@ Meteor.startup(function() {
 });
 
 
-Meteor.publish('allUsers', function() {
+Meteor.publish('users', function() {
     //if admin, publish all fields
     if (this.userId && isAdmin(this.userId)) {
         return Meteor.users.find();
