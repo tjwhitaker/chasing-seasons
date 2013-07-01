@@ -1,5 +1,5 @@
 Template.profile.helpers({
 	savedPosts: function() {
-		return Posts.find();
+		return Meteor.user().profile.savedPosts;
 	}
 });

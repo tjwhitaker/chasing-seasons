@@ -14,10 +14,11 @@ if (Posts.find().count() === 0) {
 }
 if (Meteor.users.find().count() === 0) {
     Accounts.createUser({
-        username: 'tim',
         email: 'tmwhtkr@gmail.com',
         password: 'pass',
-        profile: {},
+        profile: {
+            savedPosts: []
+        },
         isAdmin: true
     });
 }

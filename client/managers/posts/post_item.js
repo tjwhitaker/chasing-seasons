@@ -4,10 +4,12 @@ Template.postItem.helpers({
 Template.postItem.events({
 	'click .save': function(event) {
 		event.preventDefault();
-		console.log('save: ' + this.title);
+		var currentUser = Meteor.user();
+		Meteor.users.update({_id:currentUser._id}, {$push:{'profile.savedPosts': this}});
+		console.log('saved: ' + this.title);
 	},
 	'click .share': function(event) {
 		event.preventDefault();
-		console.log('share: ' + this.title);
+		console.log('shared: ' + this.title);
 	}
 });
