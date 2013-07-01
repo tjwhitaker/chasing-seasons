@@ -1,5 +1,8 @@
 <template name="profile">
-	<div>
-		<h3>Profile</h3>
-	</div>
+	<h3>Profile</h3>
+	<ul>
+		{{#each savedPosts}}
+			<li>{{title}}</li>
+		{{/each}}
+	</ul>
 </template>

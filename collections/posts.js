@@ -19,7 +19,7 @@ Meteor.methods({
         if (!postAttributes.url)
             throw new Meteor.Error(422, 'Please enter a url');
 
-        var post = _.extend(_.pick(postAttributes, 'url', 'title', 'description', 'price'), {
+        var post = _.extend(_.pick(postAttributes, 'url', 'title', 'description', 'price', 'image', 'categories'), {
             userId: user._id,
             author: user.username,
             submitted: new Date().getTime(),
