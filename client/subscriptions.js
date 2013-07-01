@@ -1,7 +1,3 @@
-handle = Meteor.subscribeWithPagination('posts', 10);
-Meteor.subscribe('currentUser');
-Meteor.subscribe('allUsers');
-
-Meteor.startup(function() {
-	Session.setDefault('currentCategory', 'all');
+Deps.autorun(function() {
+	Meteor.subscribe('posts', Session.get('currentCategory'));
 });
