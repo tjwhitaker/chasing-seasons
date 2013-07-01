@@ -3,11 +3,6 @@
 @lightGrey:#cccccc;
 @darkGrey:#999999;
 
-.adtest {
-    height:600px;
-    width:300px;
-    background:@lightGrey;
-}
 html, body {
     .backgroundImage('light_bg.png');
     .droid();
@@ -67,24 +62,10 @@ a {
                 a:hover {
                     color:@blue;
                 }
-            }
-        }
-        .account-nav {
-            li {
-                display:inline;
-                a {
-                    .oswald();
-                    color:black;
-                    text-decoration:none;
-                    padding:0 15px 0 10px;
-                }
-                a:hover {
-                    color:@blue;
-                    .backgroundColor(white);
-                }
                 .active {
                     .backgroundColor(white);
                     color:@blue;
+                    padding-bottom:5px;
                 }
             }
         }

@@ -36,9 +36,11 @@ Template.accountControls.events = {
         Meteor.logout();
     },
     'click .about-link': function(event) {
-
+        $('.nav a').removeClass('active');
+        $(event.target).addClass('active');
     },
     'click .profile-link': function(event) {
-        
+        $('.nav a').removeClass('active');
+        $(event.target).addClass('active');
     }
 };
