@@ -1,8 +1,10 @@
 <template name="profile">
 	<h3>Profile</h3>
-	<ul>
-		{{#each savedPosts}}
-			<li>{{title}}</li>
-		{{/each}}
-	</ul>
+		{{#eachWithIndex savedPosts}}
+			{{#if isLast index}}
+				<div class="fourcol last">{{> postItem}}</div>
+			{{else}}
+				<div class="fourcol">{{> postItem}}</div>
+			{{/if}}
+		{{/eachWithIndex}}
 </template>
