@@ -1,15 +1,12 @@
 TODO
 ====
 
-- Post Submit
-- Admin post Priveleges
 - Social Sharing
 - Implement Error Notifications
 - fix null on comments
 - share functionality
 - save functionality
 - style up comments
-- get categories to work
 
 ~~fix undefined when comment count is 0~~
 ~~temp logo~~
@@ -19,6 +16,9 @@ TODO
 ~~add categories~~
 ~~add nav~~
 ~~choose fonts~~
+~~post submit~~
+~~admin priveleges~~
+~~get categories to work~~
 
 Chasing Seasons
 ===============
