@@ -9,6 +9,7 @@ TODO
 - share functionality
 - save functionality
 - style up comments
+- get categories to work
 
 ~~fix undefined when comment count is 0~~
 ~~temp logo~~

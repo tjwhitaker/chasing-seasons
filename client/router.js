@@ -10,6 +10,7 @@ Meteor.Router.add({
     },
     '/submit': 'postSubmit',
     '/profile': 'profile',
+    '/about': 'about'
 });
 
 Meteor.Router.filters({

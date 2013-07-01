@@ -1,6 +1,12 @@
 Template.postList.helpers({
     posts: function() {
-        return Posts.find();
+        var category = Session.get('currentCategory');
+        if (category === "all") {
+            return Posts.find();
+        } 
+        else {
+            return Posts.find({categories: category});
+        }
     },
 
     postsReady: function() {
@@ -8,8 +14,7 @@ Template.postList.helpers({
     },
 
     allPostsLoaded: function() {
-        return handle.ready() &&
-            Posts.find().count() < handle.loaded();
+        return handle.ready() && Posts.find().count() < handle.loaded();
     }
 });
 

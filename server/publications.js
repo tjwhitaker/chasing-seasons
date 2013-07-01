@@ -32,17 +32,6 @@ Meteor.startup(function() {
             return canRemoveComment(UserId, doc);
         }
     });
-    Categories.allow({
-        insert: function(userId, doc) {
-            return false;
-        },
-        update: function(userId, doc, fields, modifier) {
-            return false;
-        },
-        remove: function(userId, doc) {
-            return false;
-        }
-    });
 });
 
 
@@ -61,10 +50,6 @@ Meteor.publish('users', function() {
 
 Meteor.publish('posts', function(limit) {
     return Posts.find({}, {sort: {submitted: -1}, limit: limit});
-});
-
-Meteor.publish('categories', function(limit) {
-    return Categories.find({}, {sort: {title:1}, limit: limit});
 });
 
 Meteor.publish('comments', function(postId) {

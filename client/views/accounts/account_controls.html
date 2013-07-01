@@ -1,5 +1,6 @@
 <template name="accountControls">
     <ul class="account-controls fourcol last">
+    	<li><a href="{{aboutPath this}}">About</a></li>
         {{#if currentUser}}
         <li><a href="{{profilePath this}}">{{displayName}}</a></li>
         <li><a href="{{homePath this}}" class="logout-link">Logout</a></li>

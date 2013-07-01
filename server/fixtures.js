@@ -1,4 +1,5 @@
 if (Posts.find().count() === 0) {
+    var cats = ['Camp', 'Climb', 'Bike', 'Skate', 'Surf', 'Snow'];
     for (i=0; i < 20; i++) {
         Posts.insert({
             title: 'Test Post #' + i,
@@ -7,34 +8,10 @@ if (Posts.find().count() === 0) {
             price: Math.round(Random.fraction()*100),
             commentsCount: 0,
             image: '/fixtureImages/' + i%10 + '.jpg',
+            categories: cats[Math.floor(Math.random()*cats.length)]
         });
     }
 }
-
-if (Categories.find().count() === 0) {
-    Categories.insert({
-        title: 'All'
-    });
-    Categories.insert({
-        title: 'Camp'
-    });
-    Categories.insert({
-        title: 'Climb'
-    });
-    Categories.insert({
-        title: 'Bike'
-    });
-    Categories.insert({
-        title: 'Skate'
-    });
-    Categories.insert({
-        title: 'Surf'
-    });
-    Categories.insert({
-        title: 'Snow'
-    });
-}
-
 if (Meteor.users.find().count() === 0) {
     Accounts.createUser({
         username: 'tim',
