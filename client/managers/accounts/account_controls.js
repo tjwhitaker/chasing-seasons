@@ -34,5 +34,11 @@ Template.accountControls.events = {
     },
     'click .logout-link': function(event) {
         Meteor.logout();
+    },
+    'click .about-link': function(event) {
+
+    },
+    'click .profile-link': function(event) {
+        
     }
 };

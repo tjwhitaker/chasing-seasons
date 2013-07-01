@@ -1,5 +1,5 @@
 if (Posts.find().count() === 0) {
-    var cats = ['Camp', 'Climb', 'Bike', 'Skate', 'Surf', 'Snow'];
+    var cats = ['Air', 'Dirt', 'Mountain', 'Snow', 'Street', 'Water'];
     for (i=0; i < 20; i++) {
         Posts.insert({
             title: 'Test Post #' + i,

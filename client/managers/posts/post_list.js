@@ -1,7 +1,7 @@
 Template.postList.helpers({
     posts: function() {
         var category = Session.get('currentCategory');
-        if (category === "all") {
+        if (Session.equals('currentCategory', 'All')) {
             return Posts.find();
         } 
         else {
