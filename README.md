@@ -3,10 +3,8 @@ TODO
 
 - Social Sharing
 - Implement Error Notifications
-- fix null on comments
 - share functionality
-- save functionality
-- style up comments
+- style up item page and comments
 
 ~~fix undefined when comment count is 0~~
 ~~temp logo~~
@@ -19,6 +17,8 @@ TODO
 ~~post submit~~
 ~~admin priveleges~~
 ~~get categories to work~~
+~~fix null on comments~~
+~~save functionality~~
 
 Chasing Seasons
 ===============
