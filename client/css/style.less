@@ -14,6 +14,9 @@ a {
     color:@orange;
     text-decoration:none;
 }
+a:hover {
+    color:@blue;
+}
 .container {
     .border(5px, solid, @lightGrey);
     .backgroundColor(white);
@@ -95,7 +98,7 @@ a {
             .post {
                 padding:15px;
                 img {
-                    .border(3px, solid, @lightGrey);
+                    .border(3px, solid, @darkGrey);
                 }
                 h3 {
                     a {
@@ -104,9 +107,19 @@ a {
                     }
                 }
                 .controls {
+                    .oswald(normal, 20px, 20px);
                     padding:5px;
                     border-top:3px solid @lightGrey;
                     border-bottom:3px solid @lightGrey;
+                    a {
+                        padding-left:10px;
+                    }
+                    .price {
+                        font-size:1.1em;
+                    }
+                    .commentLink {
+                        float:right;
+                    }
                 }
             }
         }

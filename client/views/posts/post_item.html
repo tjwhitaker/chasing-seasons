@@ -7,10 +7,11 @@
             {{#if ownPost}}<a href="{{postEditPath this}}">Edit</a>{{/if}}
         </p>
         <div class="controls">
-            <a class="price" href="{{url}}">${{price}}</a>
+            <span class="price" href="{{url}}">${{price}}</span>
+            <a href="{{url}}">Buy</a>
             <a href="#" class="share">Share</a>
-            <a href="#" class="save">Save</a>
-            <a href="{{postPagePath this}}">{{pluralize commentsCount "comment"}}</a>            
+            <a href="#" class="save">Save</a> 
+            <a class="commentLink" href="{{postPagePath this}}">{{pluralize commentsCount "comment"}}</a>            
         </div>
     </div>
 </template>
