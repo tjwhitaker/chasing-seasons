@@ -12,13 +12,3 @@ if (Posts.find().count() === 0) {
         });
     }
 }
-if (Meteor.users.find().count() === 0) {
-    Accounts.createUser({
-        email: 'tmwhtkr@gmail.com',
-        password: 'pass',
-        profile: {
-            savedPosts: []
-        },
-        isAdmin: true
-    });
-}
