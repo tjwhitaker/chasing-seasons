@@ -1,6 +1,6 @@
 {
-  "packages": {
+  "packages": 
+  {
     "router": {},
-    "paginated-subscription": {},
   }
 }

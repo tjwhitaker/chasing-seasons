@@ -3,7 +3,7 @@ Template.profile.helpers({
 		return Meteor.user().profile.savedPosts;
 	},
 	isLast: function(index) {
-		return index%3 ? false : true;
+		return index % 3 ? false : true;
 	},
 	eachWithIndex: function(array, fn) {
 		var buffer = '';

@@ -1,16 +1,12 @@
 <template name="postPage">
     <div class="row">
-        <a href="/" class="back eightcol">< Back</a>
+        <a href="/" class="back onecol">< Back</a>
     </div>
     <div class="posts eightcol">
         {{#with currentPost}}
             {{> postItem}}
 
-            <ul class="comments">
-                {{#each comments}}
-                    {{> comment}}
-                {{/each}}
-            </ul>
+            {{> commentList}}
 
             {{#if currentUser}}
                 {{>commentSubmit}}

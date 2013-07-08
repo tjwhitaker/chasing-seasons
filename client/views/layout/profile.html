@@ -1,5 +1,6 @@
 <template name="profile">
-	<h3>Profile</h3>
+	<div class="profile">
+		<h3>Saved Posts</h3>
 		{{#eachWithIndex savedPosts}}
 			{{#if isLast index}}
 				<div class="fourcol last">{{> postItem}}</div>
@@ -7,4 +8,5 @@
 				<div class="fourcol">{{> postItem}}</div>
 			{{/if}}
 		{{/eachWithIndex}}
+	</div>
 </template>
