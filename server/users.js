@@ -1,5 +1,7 @@
 Accounts.onCreateUser(function(options, user) {
-	if (Meteor.users.find().count() === 0) {
+	user.profile = options.profile || {};
+
+	if (!Meteor.users.find().count()) {
 		user.isAdmin = true;
 	}
 	else {
