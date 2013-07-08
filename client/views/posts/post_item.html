@@ -1,7 +1,7 @@
 <template name="postItem">
     <div class="post">
-        <img src="{{image}}" />
-        <h3><a href="{{postPagePath this}}">{{title}}</a></h3>
+        <a href="{{url}}"><img src="{{image}}" /></a>
+        <h3><a href="{{url}}">{{title}}</a></h3>
         <p>
             {{description}}
             {{#if ownPost}}<a href="{{postEditPath this}}">Edit</a>{{/if}}
