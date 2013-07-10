@@ -26,7 +26,12 @@ Meteor.methods({
             commentsCount: 0
         });
 
-        var postId = Posts.insert(post);
-        return postId;
+        if (isAdmin(user._id)) {
+            var postId = Posts.insert(post);
+            return postId;
+        } 
+        else {
+            return 0;
+        }
     }
 });
