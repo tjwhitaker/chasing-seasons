@@ -1,6 +1,3 @@
-Template.postItem.helpers({
-});
-
 Template.postItem.events({
 	'click .save': function(event) {
 		event.preventDefault();

@@ -3,7 +3,7 @@ if (Posts.find().count() === 0) {
 		title: 'Sun Rocket Solar Kettle',
 		url: 'http://www.sunkettle.com',
 		price: '60',
-		description: "The sun rocket is the perfect way to heat and boil your water using only the power of the sun. It's portable, convenient, and sleek. Check it out.",
+		description: "The sun rocket is the perfect way to heat and boil your water using only the power of the sun. It's portable, convenient, and sleek. It's tea time bitches!",
 		commentsCount: 0,
 		image: '/images/kettle.jpg',
 		categories: 'Camp'
@@ -24,7 +24,7 @@ if (Posts.find().count() === 0) {
 		description: "Never worry about forgetting things in your pocket while you're out in the water again. Stash Incorparated has developed a new waterproof pocket that will allow you to safely take your cell phone, wallet, and keys with you wherever you want to take them.",
 		commentsCount: 0,
 		image: '/images/stash_shorts.jpg',
-		categories: 'Surf'
+		categories: 'Water'
 	});
 	Posts.insert({
 		title: 'Airblaster Ninja Suit',
@@ -34,5 +34,14 @@ if (Posts.find().count() === 0) {
 		commentsCount: 0,
 		image: '/images/ninja_suit.jpg',
 		categories: 'Snow'
+	});
+	Posts.insert({
+		title: 'Vassago Jabberwocky',
+		url: 'http://www.vassagocycles.com/jabberwocky/',
+		price: '500',
+		description: "The Jabberwocky is one of the nicest singlespeed frames out there. Those who have used the Jabberwocky frame can attest to the quality and feel of the wet cat geometry. When it comes to singlespeed 29ers, the jabberwocky reigns supreme. Check it out!",
+		commentsCount: 0,
+		image: '/images/jabber.jpg',
+		categories: 'Dirt'
 	});
 }
