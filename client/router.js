@@ -4,13 +4,10 @@ Meteor.Router.add({
         to: 'postPage',
         and: function(id) { Session.set('currentPostId', id); }
     },
-    '/posts/:_id/edit': {
-        to: 'postEdit',
-        and: function(id) { Session.set('currentPostId', id); }
-    },
     '/submit': 'postSubmit',
-    '/profile': 'profile',
-    '/about': 'about'
+    '/profile': 'profile', 
+    '/about': 'about',
+    '/users': 'users'
 });
 
 Meteor.Router.filters({
@@ -28,4 +25,5 @@ Meteor.Router.filters({
     }
 });
 
+Meteor.Router.filter('requireLogin', {only: ['profile', 'postSubmit']});
 Meteor.Router.filter('clearErrors');

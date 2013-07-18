@@ -1,4 +1,6 @@
 <template name="main">
-    {{> accountModal}}
-    {{renderPage}}
+    {{#isolate}}
+	    {{> accountModal}}
+	    {{renderPage}}
+    {{/isolate}}
 </template>

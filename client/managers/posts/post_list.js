@@ -4,7 +4,7 @@ Template.postList.helpers({
             return Posts.find();
         } 
         else {
-            return Posts.find({categories: Session.get('currentCategory')});
+            return Posts.find({category: Session.get('currentCategory')});
         }
     },
 });

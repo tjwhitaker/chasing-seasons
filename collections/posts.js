@@ -33,5 +33,9 @@ Meteor.methods({
         else {
             return 0;
         }
+    },
+    save: function(post) {
+        var user = Meteor.user();
+        Meteor.users.update({_id: user._id},  {$push: {'profile.savedPosts': post}});
     }
 });

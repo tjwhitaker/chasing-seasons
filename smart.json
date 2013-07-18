@@ -1,6 +1,7 @@
 {
   "packages": {
+    "router": {},
     "spin": {},
-    "jquery-ui": {}
+    "paginated-subscription": {}
   }
 }

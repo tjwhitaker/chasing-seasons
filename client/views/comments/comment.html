@@ -1,4 +1,7 @@
 <template name="comment">
+	{{#if currentUserIsAdmin}}
+        <a href="#" class="delete">Delete</a>
+    {{/if}}
     <li>
         <h4>
             <span class="author">{{author}}</span>

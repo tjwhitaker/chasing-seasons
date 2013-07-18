@@ -34,14 +34,6 @@ Meteor.startup(function() {
     });
 });
 
-Meteor.publish('currentUser', function() {
-    return Meteor.users.find(this.userId);
-});
-
-Meteor.publish('allUsers', function() {
-    return Meteor.users.find();
-});
-
 Meteor.publish('posts', function(limit) {
     return Posts.find({}, {sort: {submitted: -1}, limit: limit});
 });

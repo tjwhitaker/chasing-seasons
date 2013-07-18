@@ -7,6 +7,7 @@ Template.postSubmit.events({
             title: $(e.target).find('[name=title]').val(),
             description: $(e.target).find('[name=description]').val(),
             price: $(e.target).find('[name=price]').val(),
+            category: $(e.target).find('[name=category]').val(),
             image: $(e.target).find('[name=image]').val(),
         }
 
