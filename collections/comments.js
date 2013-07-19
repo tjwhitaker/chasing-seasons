@@ -25,5 +25,8 @@ Meteor.methods({
         comment._id = Comments.insert(comment);
         
         return comment._id;
+    },
+    deleteComment: function(comment) {
+        Comments.remove(comment._id);
     }
 });

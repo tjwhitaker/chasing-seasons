@@ -29,6 +29,6 @@ Template.postItem.events({
 	},
 	'click .delete': function(event) {
 		event.preventDefault();
-		Posts.remove(this._id);
+		Meteor.call('deletePost', this);
 	}
 });

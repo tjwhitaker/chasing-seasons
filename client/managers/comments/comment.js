@@ -9,3 +9,9 @@ Template.comment.helpers({
 	}
 });
 
+Template.comment.events({
+	'click .delete': function(event) {
+		event.preventDefault();
+		Meteor.call('deleteComment', this);
+	}
+})
