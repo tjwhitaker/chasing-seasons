@@ -36,8 +36,11 @@ Meteor.methods({
     },
     save: function(post) {
         var user = Meteor.user();
-        if (!_.findWhere(user.profile.savedPosts, {'_id': post._id}))
+        if (!_.findWhere(user.profile.savedPosts, {'_id': post._id})) {
             Meteor.users.update({_id: user._id},  {$push: {'profile.savedPosts': post}});
+            return true;
+        }
+        return false;
     },
     deletePost: function(post) {
         Posts.remove(post._id);

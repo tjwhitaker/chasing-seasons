@@ -11,17 +11,16 @@ Template.postItem.events({
 		event.preventDefault();
 		var currentUser = Meteor.user();
 
-		//Meteor.users.update({_id:currentUser._id}, {$push:{'profile.savedPosts': this}});
-		// Meteor.call('save', this, function(error, id) {
-		// 	if (error) {
-		// 		throwError(error.reason);
-		// 	}
-		// });
-		
-		console.log('saved: ' + this.title);
-		
-		$(event.target).addClass('saved');
-		$(event.target).text('Saved!');
+		if (Meteor.call('save', this))
+		{
+			$(event.target).addClass('saved');
+			$(event.target).text('Saved!');
+			console.log('Saved: ' + this.title);
+		}
+		else {
+			$(event.target).text('Error');
+			console.log('Error saving: ' + this.title);
+		}
 	},
 	'click .share': function(event) {
 		event.preventDefault();
