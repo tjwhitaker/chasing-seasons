@@ -15,3 +15,15 @@ Template.profile.helpers({
 		return buffer;
 	}
 });
+
+Template.profile.events({
+	'click .remove': function(event) {
+		event.preventDefault();
+		Meteor.call('remove', this, function(error, result) {
+			if (error)
+			{
+				console.log(error);
+			}
+		});
+	}
+});

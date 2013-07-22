@@ -2,6 +2,7 @@
 @orange:#ff6600;
 @lightGrey:#cccccc;
 @darkGrey:#999999;
+@red:#ee0000;
 
 html, body {
     .backgroundImage('light_bg.png');
@@ -102,6 +103,13 @@ a:hover {
                 display:none;
             }
         }
+        .remove {
+            .oswald(normal, 20px, 20px);
+            color:@lightGrey;
+        }
+        .remove:hover {
+            color:@red;
+        }
         .posts {
             .post {
                 padding:10px 15px 10px 15px;
@@ -134,6 +142,9 @@ a:hover {
                     .saved {
                         color:@lightGrey;
                     }
+                    .error {
+                        color:@red;
+                    }
                 }
             }
         }
@@ -142,7 +153,6 @@ a:hover {
             .post {
                 .border(5px, solid, @lightGrey);
                 padding:10px;
-                margin:10px;
             }
         }
     }

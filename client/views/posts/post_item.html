@@ -12,7 +12,11 @@
             <span class="price" href="{{url}}">${{price}}</span>
             <a href="{{url}}">Buy</a>
             <a href="#" class="share">Share</a>
-            <a href="#" class="save">Save</a>          
+            {{#if isSaved}}
+                <a class="saved">Saved!</a>
+            {{else}}
+                <a href="#" class="save">Save</a>          
+            {{/if}}
             <a class="commentLink" href="{{postPagePath this}}">{{pluralize commentsCount "comment"}}</a>            
         </div>
     </div>

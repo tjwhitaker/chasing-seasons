@@ -3,6 +3,13 @@ Template.postItem.helpers({
 		if (Meteor.user()) {
 			return isAdmin(Meteor.userId());
 		};
+	},
+	isSaved: function() {
+		user = Meteor.user();
+
+		if (user && _.where(user.profile.savedPosts, {_id: this._id}).length > 0)
+			return true;
+		return false;
 	}
 });
 
@@ -11,16 +18,12 @@ Template.postItem.events({
 		event.preventDefault();
 		var currentUser = Meteor.user();
 
-		if (Meteor.call('save', this))
-		{
-			$(event.target).addClass('saved');
-			$(event.target).text('Saved!');
-			console.log('Saved: ' + this.title);
-		}
-		else {
-			$(event.target).text('Error');
-			console.log('Error saving: ' + this.title);
-		}
+		Meteor.call('save', this, function(error, result) {
+			if (error) {
+				$(event.target).addClass('error');
+				$(event.target).text('Error');
+			}
+		});
 	},
 	'click .share': function(event) {
 		event.preventDefault();

@@ -3,9 +3,9 @@
 		<h3>Saved Posts</h3>
 		{{#eachWithIndex savedPosts}}
 			{{#if isLast index}}
-				<div class="fourcol last">{{> postItem}}</div>
+				<div class="fourcol last"><a href="#" class="remove">Remove</a>{{> postItem}}</div>
 			{{else}}
-				<div class="fourcol">{{> postItem}}</div>
+				<div class="fourcol"><a href="#" class="remove">Remove</a>{{> postItem}}</div>
 			{{/if}}
 		{{/eachWithIndex}}
 	</div>

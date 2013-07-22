@@ -36,11 +36,15 @@ Meteor.methods({
     },
     save: function(post) {
         var user = Meteor.user();
-        if (!_.findWhere(user.profile.savedPosts, {'_id': post._id})) {
-            Meteor.users.update({_id: user._id},  {$push: {'profile.savedPosts': post}});
+        if (!_.where(user.profile.savedPosts, {_id: post._id}).length > 0) {
+            Meteor.users.update({_id: user._id},  {$addToSet: {'profile.savedPosts': post}});
             return true;
         }
-        return false;
+        throw new Meteor.Error(422, 'Item already saved.');
+    },
+    remove: function(post) {
+        var user = Meteor.user();
+        Meteor.users.update({_id: user._id}, {$pull: {'profile.savedPosts': {_id: post._id}}});
     },
     deletePost: function(post) {
         Posts.remove(post._id);
