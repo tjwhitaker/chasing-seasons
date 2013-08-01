@@ -3,11 +3,7 @@
         {{#each posts}}
             {{> postItem}}
         {{/each}}
-        {{#if postsReady}}
-        	{{#unless allPostsLoaded}}
-        		<a class="load-more" href="#">Load More</a>
-    		{{/unless}}
-    	{{else}}
+    	{{#if postsLoading}}
     		{{> loading}}
         {{/if}}
     </div>
