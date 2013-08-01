@@ -1,5 +1,5 @@
 <template name="postList">
-    <div class="posts eightcol">
+    <div class="posts twelvecol">
         {{#each posts}}
             {{> postItem}}
         {{/each}}
@@ -10,8 +10,5 @@
     	{{else}}
     		{{> loading}}
         {{/if}}
-    </div>
-    <div class="ads fourcol last">
-        {{> ads}}
     </div>
 </template>
