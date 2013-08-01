@@ -21,3 +21,11 @@ Template.postList.events({
 		handle.loadNextPage();
 	}
 });
+
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        if (Posts.find().count() >= handle.loaded()) {
+            handle.loadNextPage();
+        }
+    }
+};
