@@ -186,24 +186,39 @@ a:hover {
 .backgroundImage(@img) {
     background-image: url('/@{img}');
 }
-.oswald(@weight:normal, @size:30px, @lineHeight:40px) {
-    font-family:oswald;
-    font-weight:@weight;
-    font-size:@size;
-    line-height:@lineHeight;
-    src:url('/oswald.ttf');
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('/droid-webfont.eot');
+    src: url('/droid-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/droid-webfont.woff') format('woff'),
+         url('/droid-webfont.ttf') format('truetype'),
+         url('/droid-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-.roboto(@weight:normal, @size:16px, @lineHeight:20px) {
-    font-family:roboto;
-    font-weight:@weight;
-    font-size:@size;
-    line-height:@lineHeight;
-    src:url('/roboto.ttf');
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('/oswald-webfont.eot');
+    src: url('/oswald-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/oswald-webfont.woff') format('woff'),
+         url('/oswald-webfont.ttf') format('truetype'),
+         url('/oswald-webfont.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-.droid(@weight:normal, @size:20px, @lineHeight:24px) {
-    font-family:droid;
-    font-weight:@weight;
-    font-size:@size;
-    line-height:@lineHeight;
-    src:url('/droid.ttf');
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/roboto-webfont.eot');
+    src: url('/roboto-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/roboto-webfont.woff') format('woff'),
+         url('/roboto-webfont.ttf') format('truetype'),
+         url('/roboto-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+.droid(@weight:normal, @size:20px, @lineHeight:24px) {}
+.oswald(@weight:normal, @size:30px, @lineHeight:40px) {}
+.roboto(@weight:normal, @size:16px, @lineHeight:20px) {}

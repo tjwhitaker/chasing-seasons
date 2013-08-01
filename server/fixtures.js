@@ -1,12 +1,21 @@
 if (Posts.find().count() === 0) {
 	Posts.insert({
-		title: '',
-		url: '',
-		price: '',
-		description: "",
+		title: 'Straight Line Sham How',
+		url: 'http://www.amazon.com/Straight-Line-Sham-Yellow-70-Feet/dp/B007N0W1T8/ref=sr_1_28?s=sporting-goods&ie=UTF8&qid=1374706904&sr=1-28&keywords=straight+line+rope',
+		price: '140',
+		description: "Straight Line has been making quality ski and wakeboard ropes since 1986. The sham how is one good looking handle. It feels and looks good on the hands.",
 		commentsCount: 0,
-		image: '',
-		category: ''
+		image: '/images/straightline.jpg',
+		category: 'Water'
+	});
+	Posts.insert({
+		title: 'Airwalk Skate Rail',
+		url: 'http://www.amazon.com/Airwalk-AW05012-56-Grind-Rail/dp/B004VN92HY/ref=sr_1_1?ie=UTF8&qid=1374699279&sr=8-1&keywords=skate+rail',
+		price: '35',
+		description: "This is your standard skate rail. It's got adjustable height and it's super affordable. Take it anywhere and start your own sesh.",
+		commentsCount: 0,
+		image: '/images/airwalk.jpg',
+		category: 'Street'
 	});
 	Posts.insert({
 		title: 'Cat Eye Wireless Cyclocomputer',
