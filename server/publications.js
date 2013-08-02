@@ -41,3 +41,6 @@ Meteor.publish('posts', function(limit) {
 Meteor.publish('comments', function(postId) {
     return Comments.find({postId: postId});
 });
+Meteor.publish('users', function() {
+    return Meteor.users().find();
+});
