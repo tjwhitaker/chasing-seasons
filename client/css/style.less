@@ -22,8 +22,7 @@ a:hover {
     .border(5px, solid, @lightGrey);
     .backgroundColor(white);
     width: 100%;
-    max-width: 960px;
-    min-width: 755px;
+    max-width: 720px;
     margin:0 auto;
     margin-top:15px;
     margin-bottom:15px;
@@ -37,10 +36,10 @@ a:hover {
             li {
                 display:inline;
                 a {
-                    .oswald();
+                    .oswald(normal, 24px, 40px);
                     color:black;
                     text-decoration:none;
-                    padding:0 15px 0 10px;
+                    padding:0 10px 2px 5px;
                 }
                 a:hover {
                     color:@blue;
@@ -219,7 +218,7 @@ a:hover {
     font-style: normal;
 
 }
-.droid(@weight:normal, @size:20px, @lineHeight:24px) {
+.droid(@weight:normal, @size:18px, @lineHeight:24px) {
     font-family:'droid_serifregular';
     font-weight:@weight;
     font-size:@size;
@@ -236,4 +235,9 @@ a:hover {
     font-weight:@weight;
     font-size:@size;
     line-height:@lineHeight;
+}
+@media handheld, only screen and (max-width:720px) {
+    .categories {
+        display:none;
+    }
 }

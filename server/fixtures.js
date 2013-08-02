@@ -246,7 +246,7 @@ if (Posts.find().count() === 0) {
 		title: 'Sun Rocket Solar Kettle',
 		url: 'http://www.sunkettle.com',
 		price: '60',
-		description: "The sun rocket is the perfect way to heat and boil your water using only the power of the sun. It's portable, convenient, and sleek. It's tea time bitches!",
+		description: "The sun rocket is the perfect way to heat and boil your water using only the power of the sun. It's portable, convenient, and sleek. It's tea time!",
 		commentsCount: 0,
 		image: '/images/kettle.jpg',
 		category: 'Camp'
