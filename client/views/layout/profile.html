@@ -1,6 +1,6 @@
 <template name="profile">
 	<div class="profile">
-		<h3>Saved Posts</h3>
+		<h1>Welcome {{displayName}}!</h1>
 		{{#eachWithIndex savedPosts}}
 			{{#if isLast index}}
 				<div class="fourcol last"><a href="#" class="remove">Remove</a>{{> postItem}}</div>
