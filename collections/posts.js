@@ -1,4 +1,4 @@
-Posts = new Meteor.Collection('posts');
+Posts = new Meteor.SmartCollection('posts');
 
 Meteor.methods({
     post: function(postAttributes) {

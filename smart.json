@@ -2,6 +2,7 @@
   "packages": {
     "router": {},
     "spin": {},
-    "paginated-subscription": {}
+    "paginated-subscription": {},
+    "smart-collections": {}
   }
 }

@@ -1,1 +1,1 @@
-Users = new Meteor.Collection('Users');
+AllUsers = new Meteor.SmartCollection('users');

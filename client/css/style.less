@@ -162,6 +162,24 @@ a:hover {
             .post {
                 .border(5px, solid, @lightGrey);
                 padding:10px;
+                margin-bottom:5px;
+            }
+        }
+        .about {
+            padding:15px;
+            .video {
+                position:relative;
+                padding-bottom:56.25%;
+                padding-top:30px;
+                height:0;
+                overflow:hidden;
+                iframe {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                }
             }
         }
     }
