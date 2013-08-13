@@ -1,1 +1,0 @@
-AllUsers = new Meteor.SmartCollection('users');
