@@ -12,6 +12,9 @@
             <span class="price" href="{{url}}">${{price}}</span>
             <a href="{{url}}">Buy</a>
             <a href="#" class="share">Share</a>
+            {{#if isSharing}}
+                {{> postShare}}
+            {{/if}}
             {{#if isSaved}}
                 <a class="saved">Saved!</a>
             {{else}}

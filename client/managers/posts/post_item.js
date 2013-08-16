@@ -10,6 +10,10 @@ Template.postItem.helpers({
 		if (user && _.where(user.profile.savedPosts, {_id: this._id}).length > 0)
 			return true;
 		return false;
+	},
+	isSharing: function() {
+		if (this._id === Session.get('isSharing')) {return true;} 
+		return false;
 	}
 });
 
@@ -27,10 +31,15 @@ Template.postItem.events({
 	},
 	'click .share': function(event) {
 		event.preventDefault();
-		console.log('shared: ' + this.title);
+		console.log(this);
+		Session.set('isSharing', this._id);
 	},
 	'click .delete': function(event) {
 		event.preventDefault();
 		Meteor.call('deletePost', this);
+	},
+	'click .dim': function(event) {
+		event.preventDefault();
+		Session.set('isSharing', false);
 	}
 });
