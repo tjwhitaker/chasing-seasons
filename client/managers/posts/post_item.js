@@ -31,7 +31,6 @@ Template.postItem.events({
 	},
 	'click .share': function(event) {
 		event.preventDefault();
-		console.log(this);
 		Session.set('isSharing', this._id);
 	},
 	'click .delete': function(event) {
