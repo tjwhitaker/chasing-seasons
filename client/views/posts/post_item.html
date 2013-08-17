@@ -18,9 +18,9 @@
                 <a href="#" class="save">Save</a>          
             {{/if}}
             <a class="commentLink" href="{{postPagePath this}}">{{pluralize commentsCount "comment"}}</a>            
+            {{#if isSharing}}
+                {{> postShare}}
+            {{/if}}
         </div>
-        {{#if isSharing}}
-            {{> postShare}}
-        {{/if}}
     </div>
 </template>
