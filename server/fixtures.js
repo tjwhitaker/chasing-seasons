@@ -1,25 +1,7 @@
 if (Posts.find().count() === 0) {
 	Posts.insert({
-		title: 'Straight Line Sham How',
-		url: 'http://www.amazon.com/Straight-Line-Sham-Yellow-70-Feet/dp/B007N0W1T8/ref=sr_1_28?s=sporting-goods&ie=UTF8&qid=1374706904&sr=1-28&keywords=straight+line+rope',
-		price: '140',
-		description: "Straight Line has been making quality ski and wakeboard ropes since 1986. The sham how is one good looking handle. It feels and looks good on the hands.",
-		commentsCount: 0,
-		image: '/images/straightline.jpg',
-		category: 'Water'
-	});
-	Posts.insert({
-		title: 'Airwalk Skate Rail',
-		url: 'http://www.amazon.com/Airwalk-AW05012-56-Grind-Rail/dp/B004VN92HY/ref=sr_1_1?ie=UTF8&qid=1374699279&sr=8-1&keywords=skate+rail',
-		price: '35',
-		description: "This is your standard skate rail. It's got adjustable height and it's super affordable. Take it anywhere and start your own sesh.",
-		commentsCount: 0,
-		image: '/images/airwalk.jpg',
-		category: 'Street'
-	});
-	Posts.insert({
 		title: 'Cat Eye Wireless Cyclocomputer',
-		url: 'http://www.amazon.com/CatEye-Wireless-Bicycle-Computer-CC-RD300W/dp/B003GNTCJI/ref=zg_bs_3403321_1',
+		url: 'http://www.amazon.com/gp/product/B000P1RO7Q/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000P1RO7Q&linkCode=as2&tag=chasiseaso-20',
 		price: '55',
 		description: "The cat eye cyclocomputer comes in three different colors. Black, pink/white, and white. This handy bike computer lets you know you're max speed, average speed, trip distance, total distance, elapsed time, and the time.",
 		commentsCount: 0,
@@ -28,20 +10,11 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Backcountry Access Arsenal A1 Shovel',
-		url: 'http://www.amazon.com/Backcountry-Arsenal-Shovel-Avalanche-Saw/dp/B005GUBEBS/ref=sr_1_1?ie=UTF8&qid=1374696653&sr=8-1&keywords=bca+arsenal+shovel',
+		url: 'http://www.amazon.com/gp/product/B005GUBEBS/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B005GUBEBS&linkCode=as2&tag=chasiseaso-20',
 		price: '80',
 		description: "Shovels are indespensable in the back country. use them to build jumps, or get yourself out of a hairy situation. The arsenal a1 comes with a 35cm sawblade embedded in the shovel. The shovel weighs only 23.5 oz.",
 		commentsCount: 0,
 		image: '/images/arsenal.jpg',
-		category: 'Snow'
-	});
-	Posts.insert({
-		title: 'Ski Tracks - GPS Track Recorder',
-		url: 'https://itunes.apple.com/us/app/ski-tracks-gps-track-recorder/id365724094?mt=8',
-		price: '1',
-		description: "This is an iphone app that tracks all sorts of dat about your riding. You can track speed, distance, altitude, vertical feet, slope angle, duration, and much more.",
-		commentsCount: 0,
-		image: '/images/skitracks.jpg',
 		category: 'Snow'
 	});
 	Posts.insert({
@@ -55,7 +28,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Sterling Evolution Velocity Rope',
-		url: 'http://www.amazon.com/Sterling-Rope-Evolution-Velocity-Silver/dp/B003L6RBFW/ref=sr_1_1?ie=UTF8&qid=1374694260&sr=8-1&keywords=sterling+rope',
+		url: 'http://www.amazon.com/gp/product/B004MXEHWS/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004MXEHWS&linkCode=as2&tag=chasiseaso-20',
 		price: '150-280',
 		description: "Sterling has been making high quality ropes for years. The evolution velocity is a great rope for just about anything. At 9.8mm, this rope is great for projecting, sending, or toproping. It comes in many different colors. You won't be disappointed with a sterling.",
 		commentsCount: 0,
@@ -64,7 +37,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Climb On!',
-		url: 'http://www.amazon.com/Climb-On-Bar/dp/B0017TK2TC/ref=sr_1_1?ie=UTF8&qid=1374693887&sr=8-1&keywords=climbing',
+		url: 'http://www.amazon.com/gp/product/B0017TK2TC/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0017TK2TC&linkCode=as2&tag=chasiseaso-20',
 		price: '4-12',
 		description: "Climb On is a balm you rub on your fingertips after a day of climbing. It helps your skin heal faster and better and will allow you to crush those boulders on multiday trips. For the price, it's worth having a couple of these in your gear bag.",
 		commentsCount: 0,
@@ -73,7 +46,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Mammut Realization Harness Shorts',
-		url: 'http://www.amazon.com/Mammut-Realization-Harness-Shorts-Harnesses/dp/B007X06F1I/ref=sr_1_1?ie=UTF8&qid=1374693490&sr=8-1&keywords=mammut+realization',
+		url: 'http://www.amazon.com/gp/product/B007X06F1I/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007X06F1I&linkCode=as2&tag=chasiseaso-20',
 		price: '200',
 		description: "Mammut has combined a pair of comfortable durable shorts with a rock climbing harness. Lose the weight and bulkiness with these sleek shorts. They feature built in gear loops, and they offer optimal comfort due to Mammut Split Webbing integrated in the waistband.",
 		commentsCount: 0,
@@ -91,7 +64,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Black Diamond Camalot x4',
-		url: 'http://www.amazon.com/Black-Diamond-Camalot-Climbing-Cam/dp/B00AFDEGXE/ref=sr_1_1?s=sporting-goods&ie=UTF8&qid=1374692677&sr=1-1&keywords=black+diamond+x4',
+		url: 'http://www.amazon.com/gp/product/B00AFDEH9C/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AFDEH9C&linkCode=as2&tag=chasiseaso-20',
 		price: '70',
 		description: "The x4 is black diamond's latest cam offereing. The camalot c4 is the de facto standard when it comes to building a rack. The x4 tries to round out their cam offerings by creating the ultimate small placement piece. These cams feature a protective armor around the cable, short trigger action, and the stacked axels give maximum range. These cams feel great.",
 		commentsCount: 0,
@@ -100,7 +73,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Fox Shox 40 Float',
-		url: 'http://www.amazon.com/Shox-Downhill-Mountain-Bike-White/dp/B005GTPCM6/ref=sr_1_5?ie=UTF8&qid=1374692274&sr=8-5&keywords=fox+mountain+bike+shocks',
+		url: 'http://www.amazon.com/gp/product/B00D7OOESK/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00D7OOESK&linkCode=as2&tag=chasiseaso-20',
 		price: '1500',
 		description: "The Fox 40 Float will make you feel like you are riding on a cloud. With 8 inches of travel, these downhill forks will handle anything you can throw at them.",
 		commentsCount: 0,
@@ -109,7 +82,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'SRAM X0 Trigger Shifter',
-		url: 'http://www.amazon.com/Sram-SRAM-X0-Trigger-Shifters/dp/B000Q7EKY4/ref=sr_1_6?ie=UTF8&qid=1374691641&sr=8-6&keywords=sram+shifter+x0',
+		url: 'http://www.amazon.com/gp/product/B003TIP7P8/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B003TIP7P8&linkCode=as2&tag=chasiseaso-20',
 		price: '250',
 		description: "The SRAM X0 shifter is as smooth as butter. It's a sexy zero loss trigger shifter that feels as good on the hands as it looks. The X0 is bomb proof, and is totally customizable due to the adjustable pull lever and clamp positions.",
 		commentsCount: 0,
@@ -118,7 +91,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'FMF Factory 4.1 Slip On Exhaust',
-		url: 'http://www.amazon.com/FMF-Factory-Anodized-Titanium-Stainless/dp/B000VJJOVG/ref=sr_1_4?ie=UTF8&qid=1374690888&sr=8-4&keywords=fmf+factory+4.1',
+		url:'http://www.amazon.com/gp/product/B00AC5IZDM/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AC5IZDM&linkCode=as2&tag=chasiseaso-20',
 		price: '375',
 		description: "Exhaust systems are the quickest and easiest way to give your bike a little more bite. FMF has been building pipes and mufflers for a long time. Gain horsepower and lose weight with the factory 4.1.",
 		commentsCount: 0,
@@ -127,7 +100,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Merrell Trail Glove Barefoot Running Shoe',
-		url: 'http://www.amazon.com/Merrell-Trail-Glove-Running-Apollo/dp/B0085YC6WS/ref=sr_1_2?ie=UTF8&qid=1374689977&sr=8-2&keywords=trail+running+merrell',
+		url: 'http://www.amazon.com/gp/product/B0050CJ7VG/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0050CJ7VG&linkCode=as2&tag=chasiseaso-20',
 		price: '65-110',
 		description: "Barefoot shoes are all the rage now. They are super light weight, and they allow you to feel the trail much better than cushy padding running shoes. Barefoot shoes force you to utilize your calves and utilize good technique. You will become a better runner, and you will be more stoked to go run with these shoes.",
 		commentsCount: 0,
@@ -145,7 +118,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Osprey Kestrel 48 Backpack',
-		url: 'http://www.amazon.com/Osprey-Packs-Kestrel-48-Backpack/dp/B006UH0V0Q/ref=pd_sim_a_3',
+		url: 'http://www.amazon.com/gp/product/B005DFJ3D2/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B005DFJ3D2&linkCode=as2&tag=chasiseaso-20',
 		price: '170',
 		description: "A good backpack is essential to having a great backpacking trip. Carry 48 liters of whatever you can manage to fit.",
 		commentsCount: 0,
@@ -154,7 +127,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Ray Ban RB3025 Aviators',
-		url: 'http://www.amazon.com/Ray-Ban-RB3025-Aviator-Non-Polarized-Sunglasses/dp/B000GLN15O/ref=sr_1_4?ie=UTF8&qid=1374554235&sr=8-4&keywords=aviators',
+		url: 'http://www.amazon.com/gp/product/B00080FK2U/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00080FK2U&linkCode=as2&tag=chasiseaso-20',
 		price: '90',
 		description: "How else can you celebrate your top gun fantasies? With the ray ban aviator sunglasses of course. Channel your inner Tom Cruise and get sexy with these sunglasses.",
 		commentsCount: 0,
@@ -163,7 +136,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'GoPro Hero 3',
-		url: 'gopro.com/hd-hero3-cameras',
+		url: 'http://gopro.com/hd-hero3-cameras',
 		price: '200-400',
 		description: "The hero 3 is the latest in the GoPro line on durable sports cameras. The hero 3 comes in three flavors. These babies are worthy investments to capture any kind of extreme situation you can throw at it.",
 		commentsCount: 0,
@@ -190,7 +163,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Steripen Adveturer',
-		url: 'http://www.amazon.com/SteriPEN-Adventurer-Opti-Handheld-Purifier/dp/B003A1MURC/ref=sr_1_2?ie=UTF8&qid=1374616617&sr=8-2&keywords=steripen',
+		url: 'http://www.amazon.com/gp/product/B003A1MURC/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B003A1MURC&linkCode=as2&tag=chasiseaso-20',
 		price: '70',
 		description: "The steripen helps you stay hydrated by sterilizing water. Simply gather up some water and use the steripen to kill 99.9 percent of harmful bacteria using ultraviolet light. It's good for 8,000 one liter treatments and it's extremely light weight and portable.",
 		commentsCount: 0,
@@ -208,7 +181,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Eagles Nest Outfitters Hammock',
-		url: 'http://www.amazon.com/Double-Nest-Hammock-Tomato-Khaki/dp/B003BIW6NM/ref=sr_1_3?ie=UTF8&qid=1374617007&sr=8-3&keywords=hammock+camping',
+		url: 'http://www.amazon.com/gp/product/B001DDPHZQ/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B001DDPHZQ&linkCode=as2&tag=chasiseaso-20',
 		price: '50',
 		description: "Let's face it, hammocks are awesome. They are lightweight, easy to set up nearly anywhere you have trees, and there's something extremely relaxing about swinging back and forth and soaking up some beautiful scenery.",
 		commentsCount: 0,
@@ -217,7 +190,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'La Sportiva Futuras',
-		url: 'http://www.amazon.com/La-Sportiva-Futura-Rock-Climbing/dp/B0073WQ6YC',
+		url: 'http://www.amazon.com/gp/product/B005DLRHVG/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B005DLRHVG&linkCode=as2&tag=chasiseaso-20',
 		price: '170',
 		description: "The futuras are La Sportiva's latest high performace climbing shoe. The futuras use the no-edge technology, which allows climbers to have greater sensitivity on small foot holds. The futuras excel in really steep bouldering or sport climbing. The no edge technology is a bit different than what most climbers are used to, but if you want a high performance shoe and are looking to try something new, then you won't go wrong with the futuras.",
 		commentsCount: 0,
@@ -226,7 +199,7 @@ if (Posts.find().count() === 0) {
 	});
 	Posts.insert({
 		title: 'Sierra Designs Mojo UFO',
-		url: 'http://www.amazon.com/exec/obidos/ASIN/B00AAUMWXS',
+		url: 'http://www.amazon.com/gp/product/B00AAUMWXS/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AAUMWXS&linkCode=as2&tag=chasiseaso-20',
 		price: '1800',
 		description: "Wow. This is one of the nicest tents money can buy. It weighs in at less than 2 pounds, and it is made out of an ultra durable synthetic material. The 26 and a half square feet of space will give you the freedom to lounge as you please. If you're looking for an ultra light, ultra strong, and ultra sexy 2 person tent, then you won't go wrong with the Mojo UFO.",
 		commentsCount: 0,
