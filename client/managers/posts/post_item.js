@@ -1,9 +1,4 @@
 Template.postItem.helpers({ 
-	currentUserIsAdmin: function() {
-		if (Meteor.user()) {
-			return isAdmin(Meteor.userId());
-		};
-	},
 	isSaved: function() {
 		user = Meteor.user();
 

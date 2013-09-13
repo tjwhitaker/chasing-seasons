@@ -7,7 +7,8 @@ Meteor.Router.add({
     '/submit': 'postSubmit',
     '/profile': 'profile', 
     '/about': 'about',
-    '/users': 'users'
+    '/users': 'users',
+    '/admin': 'admin'
 });
 
 Meteor.Router.filters({
@@ -19,6 +20,12 @@ Meteor.Router.filters({
         else
             return 'accessDenied';
     },
+    'onlyAdmin': function(page) {
+        if (Meteor.user() && isAdmin(Meteor.userId()))
+            return page;
+        else
+            return 'accessDenied';
+    },
     'clearErrors': function(page) {
         clearErrors();
         return page;
@@ -26,4 +33,5 @@ Meteor.Router.filters({
 });
 
 Meteor.Router.filter('requireLogin', {only: ['profile', 'postSubmit']});
+Meteor.Router.filter('onlyAdmin', {only: ['admin']});
 Meteor.Router.filter('clearErrors');

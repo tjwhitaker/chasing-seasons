@@ -1,8 +1,5 @@
 <template name="postItem">
     <div class="post">
-        {{#if currentUserIsAdmin}}
-            <a href="#" class="delete">Delete</a>
-        {{/if}}
         <a href="{{url}}"><img src="{{image}}" /></a>
         <h3><a href="{{url}}">{{title}}</a></h3>
         <p>
