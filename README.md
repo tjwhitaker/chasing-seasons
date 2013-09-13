@@ -1,13 +1,15 @@
 TODO
 ====
 
-- Social Sharing
 - Implement Error Notifications
-- share functionality
-- style up item page and comments
-- figure out why comments arent showing up
-- fix admin security issues
+- pinterest share
+- style comments
 
+~~facebook share~~
+~~twitter share~~
+~~style up item page~~
+~~figure out why comments arent showing up~~
+~~fix admin security issues~~
 ~~fix undefined when comment count is 0~~
 ~~temp logo~~
 ~~style~~

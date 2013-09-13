@@ -1,5 +1,14 @@
 if (Posts.find().count() === 0) {
 	Posts.insert({
+		title: 'Jetboil Sol Titanium',
+		url: 'http://www.amazon.com/gp/product/B004RA03LK/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004RA03LK&linkCode=as2&tag=chasiseaso-20',
+		price: '150',
+		description: "The Jetboil Sol Ti is a true 4-season canister cooking system. It weighs an astonish 8.5 ounces, and the jetboil Thermo-Regulate burner technology delivers consistent heat output down to 20 degrees farenheight. The Sol Ti offers all of the features and functionality of other jetboils, including, integrated burner base and a 0.8 liter FluxRing cooking cup.",
+		commentsCount: 0,
+		image: '/images/jetboil.jpg',
+		category: 'Camp'
+	});
+	Posts.insert({
 		title: 'Cat Eye Wireless Cyclocomputer',
 		url: 'http://www.amazon.com/gp/product/B000P1RO7Q/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000P1RO7Q&linkCode=as2&tag=chasiseaso-20',
 		price: '55',
