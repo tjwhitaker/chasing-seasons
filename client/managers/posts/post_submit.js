@@ -8,7 +8,7 @@ Template.postSubmit.events({
             description: $(e.target).find('[name=description]').val(),
             price: $(e.target).find('[name=price]').val(),
             category: $(e.target).find('[name=category]').val(),
-            image: $(e.target).find('[name=image]').val(),
+            image: image //shitty global var
         }
 
         Meteor.call('post', post, function(error, id) {
@@ -21,5 +21,10 @@ Template.postSubmit.events({
                 Meteor.Router.to('postPage', id);
             }
         });
+    },
+    'change #attachment': function(e) {
+        console.log(e.files);
+        image = e.files[0].url;
+        console.log(image);
     }
 });
