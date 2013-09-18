@@ -10,7 +10,7 @@
 			<h4>Posts</h4>
 			<a href="{{postSubmitPath this}}">New Post</a>
 			{{#each posts}}
-				<li>{{title}} <a href="{{postPagePath this}}">Show</a> - <a href="">Edit</a> - <a href="#">Delete</a> - <a href="#">{{pluralize commentsCount "comment"}}</a></li>
+				<li>{{title}} <a href="{{postPagePath this}}">Show</a> - <a class="edit" href="#{}">Edit</a> - <a class="delete" href="#">Delete</a> - <a href="#">{{pluralize commentsCount "comment"}}</a></li>
 			{{/each}}
 		</ul>
 	</div>

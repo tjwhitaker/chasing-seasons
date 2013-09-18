@@ -6,3 +6,12 @@ Template.admin.helpers({
 		return Posts.find();
 	},
 });
+Template.admin.events({
+	'click .delete': function(e) {
+		e.preventDefault();
+		Meteor.call('deletePost', this);
+	},
+	'click .edit': function(e) {
+		e.preventDefault();
+	}
+});

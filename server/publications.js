@@ -35,7 +35,7 @@ Meteor.startup(function() {
 });
 
 Meteor.publish('posts', function(limit) {
-    return Posts.find({}, {sort: {submitted: 1}, limit: limit});
+    return Posts.find({}, {sort: {submitted: -1}, limit: limit});
 });
 
 Meteor.publish('comments', function(postId) {
