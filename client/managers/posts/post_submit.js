@@ -25,6 +25,5 @@ Template.postSubmit.events({
     'change #attachment': function(e) {
         console.log(e.files);
         image = e.files[0].url;
-        console.log(image);
     }
 });
