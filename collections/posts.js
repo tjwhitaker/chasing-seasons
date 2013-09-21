@@ -36,7 +36,7 @@ Meteor.methods({
     },
     save: function(post) {
         var user = Meteor.user();
-        if (!_.where(user.profile.savedPosts, {_id: post._id}).length > 0) {
+        if (!_.where(user.profile.savedPosts, {_id: post._id}).length > 0 && user.profile.savedPosts.length < 15) {
             Meteor.users.update({_id: user._id},  {$addToSet: {'profile.savedPosts': post}});
             return true;
         }
