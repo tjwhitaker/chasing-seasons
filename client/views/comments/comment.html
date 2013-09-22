@@ -1,7 +1,12 @@
 <template name="comment">
     <li>
         <h4>
-            <span class="author">{{author}}</span>
+        	{{#if isOG}}
+	            <span class="author og">{{author}}</span>
+            {{else}}
+            	<span class="author">{{author}}</span>
+			{{/if}}
+
             <span class="date">{{timestamp}}</span>
         </h4>
         <p>{{body}}</p>

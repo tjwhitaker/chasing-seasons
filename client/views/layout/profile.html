@@ -1,6 +1,15 @@
 <template name="profile">
 	<div class="profile">
-		<h1>Welcome {{displayName}}!</h1>
+		{{#if isOG}}
+			<h1>Welcome <span class="og">{{displayName}}</span>!</h1>
+		{{else}}
+			<h1>Welcome {{displayName}}!</h1>
+		{{/if}}
+
+		{{#if isPremium}}
+			<h1>Welcome (star image){{displayName}}!</h1>
+		{{/if}}
+
 		{{#eachWithIndex savedPosts}}
 			{{#if isLast index}}
 				<div class="fourcol last"><a href="#" class="remove">Remove</a>{{> postItem}}</div>

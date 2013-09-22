@@ -1,6 +1,9 @@
 Template.comment.helpers({
     timestamp: function() {
         return new Date(this.submitted).toString();
+    },
+    isOG: function() {
+    	return Meteor.user().profile.og;
     }
 });
 
